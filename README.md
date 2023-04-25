@@ -1,7 +1,7 @@
 # SupportBank
 
 1. Fork this repo
-    * Click `Fork` in the top-right of the page - this will create a copy of this repo in **your own GitLab account**
+    * Click `Fork` in the top-right of the page - this will create a copy of this repo in **your own GitHub account**
 
 2. Clone (download) the repo
     * Go to your newly-created fork of the repo (on GitHub).
