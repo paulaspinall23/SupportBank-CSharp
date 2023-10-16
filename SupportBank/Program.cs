@@ -7,7 +7,7 @@ internal class Program
         List<string> names = new List<string>();
         List<Transaction> transactions = new List<Transaction>();
 
-        using(var reader = new StreamReader(@"C:\Users\PA83195\.vscode\Training\SupportBank-CSharp\Transactions2014.csv"))
+        using(var reader = new StreamReader(@"C:\New Training\SupportBank-CSharp\Transactions2014.csv"))
         {
             reader.ReadLine();
             while (!reader.EndOfStream)
