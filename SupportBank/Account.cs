@@ -3,17 +3,20 @@ namespace SupportBank;
 public class Account
 {
     private List<Transaction> Transactions { get; set; }
-    //public string? Name { get; set; }
-
-    //public decimal AccountBalance { get; set; }
 
     public Account(string path)
     {
-        var reader = new CsvFileReader();
-        Transactions = reader.ReadCSV(path);
-        // var reader = new JSONFileReader();
-        // Transactions = reader.ReadJSON(path);
-        
+        string extension = Path.GetExtension(path);
+        if (extension == ".csv")
+        {
+            var reader = new CsvFileReader();
+            Transactions = reader.ReadCSV(path);
+        }
+        else if (extension == ".json")
+        {
+            var reader = new JSONFileReader();
+            Transactions = reader.ReadJSON(path);
+        }
     }
 
     public void ListAll()
@@ -88,49 +91,4 @@ public class Account
         }
         return result;
     }
-
-    // public void ListAll(string Name, List<Transaction> transactions)
-    // {
-    //     AccountBalance = 0;
-    //     foreach (var transaction in transactions)
-    //     {
-    //         if (transaction.From == Name)
-    //         {
-    //             AccountBalance -= transaction.Amount;
-    //         } 
-
-    //         if (transaction.To == Name)
-    //         {
-    //             AccountBalance += transaction.Amount;
-    //         } 
-    //     }
-    //     Console.WriteLine("{1}'s Account Balance is: £" + "{0:0.00}", AccountBalance, Name);
-    // }
-
-    // public void ListAccount(string Name, List<Transaction> transactions)
-    // {
-    //     foreach (var transaction in transactions)
-    //     {
-    //         if (transaction.From == Name)
-    //         {
-    //             AccountBalance -= transaction.Amount;
-    //             Console.WriteLine("{0}, £{1} to {2} for {3}", 
-    //                 transaction.Date, 
-    //                 transaction.Amount, 
-    //                 transaction.To, 
-    //                 transaction.Narrative);
-    //         } 
-
-    //         if (transaction.To == Name)
-    //         {
-    //             AccountBalance += transaction.Amount;
-    //             Console.WriteLine("{0}, £{1} from {2} for {3}", 
-    //                 transaction.Date, 
-    //                 transaction.Amount, 
-    //                 transaction.From, 
-    //                 transaction.Narrative);
-    //         } 
-    //     }
-    //     Console.WriteLine("\n{1}'s Total Account Balance is: £" + "{0:0.00}\n", AccountBalance, Name);
-    // }
 }

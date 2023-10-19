@@ -3,20 +3,20 @@ namespace SupportBank;
 public class Transaction
 {
     public DateTime Date { get; set; } 
-    public string FromAccount { get; set; } // For Json field
+    public string FromAccount { get; set; }
     public string From { get; set; }
-    public string To { get; set; }
     public string ToAccount { get; set; }
+    public string To { get; set; }
     public string Narrative { get; set; }
-    public decimal Amount { get; set; }// Look at using a decimal instead of a float
+    public decimal Amount { get; set; }
 
     public Transaction(DateTime date, string from, string to, string narrative, decimal amount)
     {
         Date = date;
-        From = from;
         FromAccount = from;
-        To = to;
+        From = from;
         ToAccount = to;
+        To = to;
         Narrative = narrative;
         Amount = amount;
     }

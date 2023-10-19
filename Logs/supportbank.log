@@ -22,3 +22,17 @@
 2023-10-18 13:30:01.0455 Error - SupportBank.CsvFileReader: Error parsing line 28: cannot parse One Cheeseburger as decimal
 2023-10-18 13:30:23.4867 Info - SupportBank.CsvFileReader: Reading file "C:\New Training\SupportBank-CSharp\DodgyTransactions2015.csv"
 2023-10-18 13:30:23.5416 Error - SupportBank.CsvFileReader: Error parsing line 28: cannot parse One Cheeseburger as decimal
+2023-10-19 08:44:06.2801 Info - SupportBank.CsvFileReader: Reading file "C:\New Training\SupportBank-CSharp\DodgyTransactions2015.csv"
+2023-10-19 08:44:06.3108 Error - SupportBank.CsvFileReader: Error parsing line 28: cannot parse One Cheeseburger as decimal
+2023-10-19 08:45:08.3502 Info - SupportBank.CsvFileReader: Reading file "C:\New Training\SupportBank-CSharp\Transactions2014.csv"
+2023-10-19 08:51:26.7167 Info - SupportBank.CsvFileReader: Reading file "C:\New Training\SupportBank-CSharp\Transactions2014.csv"
+2023-10-19 08:52:07.5608 Info - SupportBank.CsvFileReader: Reading file "C:\New Training\SupportBank-CSharp\Transactions2014.csv"
+2023-10-19 08:52:46.3017 Info - SupportBank.CsvFileReader: Reading file "C:\New Training\SupportBank-CSharp\Transactions2014.csv"
+2023-10-19 08:56:35.9205 Info - SupportBank.CsvFileReader: Reading file "C:\New Training\SupportBank-CSharp\Transactions2014.csv"
+2023-10-19 08:56:50.4330 Info - SupportBank.CsvFileReader: Reading file "C:\New Training\SupportBank-CSharp\Transactions2014.csv"
+2023-10-19 08:57:12.3201 Info - SupportBank.CsvFileReader: Reading file "C:\New Training\SupportBank-CSharp\Transactions2014.csv"
+2023-10-19 08:57:33.5496 Info - SupportBank.CsvFileReader: Reading file "C:\New Training\SupportBank-CSharp\Transactions2014.csv"
+2023-10-19 08:57:45.3539 Info - SupportBank.CsvFileReader: Reading file "C:\New Training\SupportBank-CSharp\Transactions2014.csv"
+2023-10-19 08:58:39.5323 Info - SupportBank.CsvFileReader: Reading file "C:\New Training\SupportBank-CSharp\Transactions2014.csv"
+2023-10-19 08:59:11.4275 Info - SupportBank.CsvFileReader: Reading file "C:\New Training\SupportBank-CSharp\Transactions2014.csv"
+2023-10-19 09:20:32.0213 Info - SupportBank.CsvFileReader: Reading file "C:\New Training\SupportBank-CSharp\Transactions2014.csv"

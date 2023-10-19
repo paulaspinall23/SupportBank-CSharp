@@ -5,7 +5,6 @@ namespace SupportBank;
 public class CsvFileReader
 {
     private static readonly ILogger Logger = LogManager.GetCurrentClassLogger();
-    //public List<string> names = new List<string>();
     public List<Transaction> transactions = new List<Transaction>();
 
     public List<Transaction> ReadCSV(string path)
@@ -24,14 +23,15 @@ public class CsvFileReader
 
                 DateTime date;
                 decimal amount;
+
                 try
                 {
                     date = DateTime.Parse(line[0]);
                 }
                 catch (FormatException ex)
                 {
-                    Console.WriteLine($"Error parsing line {lineNumber}: cannot parse {line[0]} as DateTime");
-                    Logger.Error($"Error parsing line {lineNumber}: cannot parse {line[0]} as DateTime");
+                    Console.WriteLine($"Error parsing line {lineNumber}: cannot parse {line[0]} as Date");
+                    Logger.Error($"Error parsing line {lineNumber}: cannot parse {line[0]} as Date");
                     throw ex;
                 }
 
@@ -48,12 +48,9 @@ public class CsvFileReader
                 
                 Transaction transaction = new Transaction(date, line[1], line[2], line[3], amount);
                 transactions.Add(transaction);
-                //names.Add(line[1]);
-                //names.Add(line[2]);
-
+                
                 lineNumber ++;
             } 
-            
         }
         return transactions;
     }
