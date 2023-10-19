@@ -1,10 +1,21 @@
 ﻿namespace SupportBank;
 
+using NLog;
+using NLog.Config;
+using NLog.Targets;
+
 internal class Program
 {
     static void Main(string[] args)
     {
-        //var account = new Account("C:\\New Training\\SupportBank-CSharp\\Transactions2014.csv");
+        var config = new LoggingConfiguration();
+        var target = new FileTarget { FileName = @"C:\New Training\SupportBank-CSharp\Logs\supportbank.log", Layout = @"${longdate} ${level} - ${logger}: ${message}" };
+        config.AddTarget("File Logger", target);
+        config.LoggingRules.Add(new LoggingRule("*", LogLevel.Debug, target));
+        LogManager.Configuration = config;
+
+        //var account = new Account("C:\\New Training\\SupportBank-CSharp\\DodgyTransactions2015.csv");
+        //account.ListAll();
         string choice = "";
         for (int i = 1; i < args.Length; i++)
         {
@@ -12,17 +23,23 @@ internal class Program
         }
         Console.WriteLine(choice);
       
-        if (choice == "All")
+        if (choice.ToLower() == "all")
         {
             Console.WriteLine("Yes");
-            var account = new Account("C:\\New Training\\SupportBank-CSharp\\Transactions2013.json");
-            account.ListAll();
+            // var account = new Account("C:\\New Training\\SupportBank-CSharp\\Transactions2013.json");
+            // account.ListAll();
         }
         else
         {
-            var account = new Account("C:\\New Training\\SupportBank-CSharp\\Transactions2013.json");
-            account.ListAccount(choice);
+            Console.WriteLine(choice.GetType());
+            Console.WriteLine(choice);
+            Console.WriteLine("No");
         }
+        // else
+        // {
+        //     var account = new Account("C:\\New Training\\SupportBank-CSharp\\Transactions2013.json");
+        //     account.ListAccount(choice);
+        // }
         
         
         

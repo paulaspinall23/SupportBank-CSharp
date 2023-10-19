@@ -1,0 +1,24 @@
+2023-10-18 11:47:50.2030 Info - SupportBank.CsvFileReader: Reading file "(path)"
+2023-10-18 11:52:31.0645 Info - SupportBank.CsvFileReader: Reading file "C:\New Training\SupportBank-CSharp\DodgyTransactions2015.csv"
+2023-10-18 11:52:54.4388 Info - SupportBank.CsvFileReader: Reading file "C:\New Training\SupportBank-CSharp\DodgyTransactions2015.csv"
+2023-10-18 11:58:05.3977 Info - SupportBank.CsvFileReader: Reading file "C:\New Training\SupportBank-CSharp\DodgyTransactions2015.csv"
+2023-10-18 12:03:22.4875 Info - SupportBank.CsvFileReader: Reading file "C:\New Training\SupportBank-CSharp\DodgyTransactions2015.csv"
+2023-10-18 12:03:22.5620 Error - SupportBank.CsvFileReader: Error parsing line 2: cannot parse One Cheeseburger as DateTime
+2023-10-18 12:04:30.3349 Info - SupportBank.CsvFileReader: Reading file "C:\New Training\SupportBank-CSharp\DodgyTransactions2015.csv"
+2023-10-18 12:04:30.3933 Error - SupportBank.CsvFileReader: Error parsing line 28: cannot parse One Cheeseburger as DateTime
+2023-10-18 12:10:34.1032 Info - SupportBank.CsvFileReader: Reading file "C:\New Training\SupportBank-CSharp\DodgyTransactions2015.csv"
+2023-10-18 12:10:34.1555 Error - SupportBank.CsvFileReader: Error parsing line 28: cannot parse One Cheeseburger as decimal
+2023-10-18 12:21:40.4532 Info - SupportBank.CsvFileReader: Reading file "C:\New Training\SupportBank-CSharp\DodgyTransactions2015.csv"
+2023-10-18 12:21:40.5016 Error - SupportBank.CsvFileReader: Error parsing line 28: cannot parse One Cheeseburger as decimal
+2023-10-18 12:23:21.5065 Info - SupportBank.CsvFileReader: Reading file "C:\New Training\SupportBank-CSharp\DodgyTransactions2015.csv"
+2023-10-18 12:23:21.7099 Error - SupportBank.CsvFileReader: Error parsing line 28: cannot parse One Cheeseburger as decimal
+2023-10-18 12:23:44.7159 Info - SupportBank.CsvFileReader: Reading file "C:\New Training\SupportBank-CSharp\DodgyTransactions2015.csv"
+2023-10-18 12:23:44.8569 Error - SupportBank.CsvFileReader: Error parsing line 28: cannot parse One Cheeseburger as decimal
+2023-10-18 12:25:23.7754 Info - SupportBank.CsvFileReader: Reading file "C:\New Training\SupportBank-CSharp\DodgyTransactions2015.csv"
+2023-10-18 12:25:24.0668 Error - SupportBank.CsvFileReader: Error parsing line 28: cannot parse One Cheeseburger as decimal
+2023-10-18 12:29:26.7599 Info - SupportBank.CsvFileReader: Reading file "C:\New Training\SupportBank-CSharp\DodgyTransactions2015.csv"
+2023-10-18 12:29:26.9313 Error - SupportBank.CsvFileReader: Error parsing line 28: cannot parse One Cheeseburger as decimal
+2023-10-18 13:30:00.9145 Info - SupportBank.CsvFileReader: Reading file "C:\New Training\SupportBank-CSharp\DodgyTransactions2015.csv"
+2023-10-18 13:30:01.0455 Error - SupportBank.CsvFileReader: Error parsing line 28: cannot parse One Cheeseburger as decimal
+2023-10-18 13:30:23.4867 Info - SupportBank.CsvFileReader: Reading file "C:\New Training\SupportBank-CSharp\DodgyTransactions2015.csv"
+2023-10-18 13:30:23.5416 Error - SupportBank.CsvFileReader: Error parsing line 28: cannot parse One Cheeseburger as decimal

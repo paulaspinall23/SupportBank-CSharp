@@ -9,10 +9,10 @@ public class Account
 
     public Account(string path)
     {
-        //var reader = new CsvFileReader();
-        //Transactions = reader.ReadCSV(path);
-        var reader = new JSONFileReader();
-        Transactions = reader.ReadJSON(path);
+        var reader = new CsvFileReader();
+        Transactions = reader.ReadCSV(path);
+        // var reader = new JSONFileReader();
+        // Transactions = reader.ReadJSON(path);
         
     }
 
