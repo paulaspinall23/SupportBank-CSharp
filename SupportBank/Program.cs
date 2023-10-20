@@ -13,25 +13,28 @@ internal class Program
         config.AddTarget("File Logger", target);
         config.LoggingRules.Add(new LoggingRule("*", LogLevel.Debug, target));
         LogManager.Configuration = config;
-
-        string choice = "";
         
-        for (int i = 1; i < args.Length; i++)           
+        if (args[0].ToLower() == "import" && args[1].ToLower() == "file")
         {
-            choice += args[i] + " ";
-        }
-              
-        if (choice.ToLower().Trim() == "all")
-        {
-            var account = new Account("C:\\New Training\\SupportBank-CSharp\\Transactions2014.csv");
-            //var account = new Account("C:\\New Training\\SupportBank-CSharp\\Transactions2013.json");
-            account.ListAll();
-        }
-        else
-        {
-            //var account = new Account("C:\\New Training\\SupportBank-CSharp\\Transactions2014.csv");
-            var account = new Account("C:\\New Training\\SupportBank-CSharp\\Transactions2013.json");
-            account.ListAccount(choice.Trim());
+            var account = new Account(args[2]);
+            Console.WriteLine("Which function would you like to perform?");
+            Console.WriteLine("1 = List All,");
+            Console.Write("2 = List [Account]: ");
+            string choice = Console.ReadLine()!;
+            if (choice.ToLower() == "1")
+            {
+                account.ListAll();
+            }
+            else if (choice.ToLower() == "2")
+            {
+                Console.Write("Who's account would you like to check?: ");
+                string response = Console.ReadLine()!;
+                account.ListAccount(response);
+            }
+            else
+            {
+                Console.WriteLine("I'm sorry, I couldn't understand your command");
+            }
         }
     }
 }
