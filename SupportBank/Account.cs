@@ -17,6 +17,11 @@ public class Account
             var reader = new JSONFileReader();
             Transactions = reader.ReadJSON(path);
         }
+        else if (extension == ".xml")
+        {
+            var reader =  new XMLFileReader();
+            Transactions = reader.ReadXML(path);
+        }
     }
 
     public void ListAll()
